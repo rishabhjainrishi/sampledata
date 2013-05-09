@@ -8,10 +8,10 @@
 
 <table id="products">
   <tr>
-	<th>ID</th>
-    <th>Product Name</th>
-    <th>Release Date</th>
-    <th>clientid</th>
+	<th><%=sortable "id","PromoId"%></th>
+    <th><%=sortable "name","Product Name" %></th>
+    <th><%=sortable "released_on","Release Date"%></th>
+    <th><%=sortable "price", "ClientId"%></th>
   </tr>
 <% @products.each do |product| %>
   <tr>
